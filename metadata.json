@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "LINEご登録",
+  "description": "サンキューページ - LINEご登録案内",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

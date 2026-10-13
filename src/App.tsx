@@ -3,40 +3,53 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import tokutenImg from './tokuten.png';
+
 export default function App() {
   return (
     <div className="min-h-screen bg-[#f4eedc] text-[#111] font-sans flex flex-col items-center selection:bg-[#ffe600]">
       <div className="flex-1 w-full flex flex-col items-center pt-12 pb-12 px-4">
-        <main className="w-full max-w-2xl bg-white border-4 border-black shadow-[6px_6px_0px_#000] p-8 md:p-12 rounded-xl text-center mb-12">
+        <main className="w-full max-w-2xl bg-white border-4 border-black shadow-[6px_6px_0px_#000] p-5 sm:p-8 md:p-12 rounded-xl text-center mb-12">
         
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-black mb-8 text-red-600 tracking-tight leading-tight">
+        <h1 className="text-[34px] sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 text-red-600 tracking-tight leading-tight">
           登録はまだ<br />終わっていません
         </h1>
 
         <p className="text-2xl md:text-3xl font-bold leading-relaxed mb-6">
-          今すぐスマホでLINEに登録して<br />
-          特典を受け取ってください。
+          今すぐスマホで<br className="md:hidden" />LINEに登録して<br />
+          4大特典を受け取って<br className="md:hidden" />ください。
+          <span className="text-xs sm:text-base md:text-xl font-bold text-gray-700 block mt-2 whitespace-nowrap tracking-tight">
+            （ご登録後、すぐに受け取ることができます）
+          </span>
         </p>
+
+        <div className="my-8 flex justify-center">
+          <img
+            src={tokutenImg}
+            alt="4大特典"
+            className="w-full max-w-xl h-auto object-contain rounded-lg"
+          />
+        </div>
 
         <p className="text-4xl md:text-5xl font-black mb-10">
           ↓　↓　↓
         </p>
 
         <section className="mb-12 flex flex-col items-center">
-          <h2 className="inline-block text-2xl md:text-3xl font-black mb-6 px-2 shadow-[inset_0_-12px_0_#ffe600] md:shadow-[inset_0_-16px_0_#ffe600] tracking-wide">
+          <h2 className="inline-block text-lg sm:text-2xl md:text-3xl font-black mb-6 px-2 shadow-[inset_0_-10px_0_#ffe600] md:shadow-[inset_0_-16px_0_#ffe600] tracking-tight sm:tracking-wide whitespace-nowrap">
             ①友達登録
           </h2>
           <p className="font-bold mb-6 text-center leading-relaxed">
             スマートフォンでご覧の方は、<br />
             以下の「友だち追加」ボタンを押してご登録ください。
           </p>
-          <a href="#" className="inline-block w-full max-w-xl bg-[#06C755] text-white font-black text-2xl md:text-3xl lg:text-4xl py-6 md:py-8 px-6 rounded-full border-4 border-black shadow-[6px_6px_0px_#000] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[4px_4px_0px_#000] transition-all text-center tracking-wider">
+          <a href="#" className="inline-block w-full max-w-xl bg-[#06C755] text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl py-5 md:py-8 px-4 sm:px-6 rounded-full border-4 border-black shadow-[6px_6px_0px_#000] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[4px_4px_0px_#000] transition-all text-center tracking-normal sm:tracking-wider whitespace-nowrap">
             【友達追加はこちら】
           </a>
         </section>
 
         <section className="mb-12 flex flex-col items-center">
-          <h2 className="inline-block text-2xl md:text-3xl font-black mb-6 px-2 shadow-[inset_0_-12px_0_#ffe600] md:shadow-[inset_0_-16px_0_#ffe600] tracking-wide">
+          <h2 className="inline-block text-lg sm:text-2xl md:text-3xl font-black mb-6 px-2 shadow-[inset_0_-10px_0_#ffe600] md:shadow-[inset_0_-16px_0_#ffe600] tracking-tight sm:tracking-wide whitespace-nowrap">
             ②QRコードを読み取る場合
           </h2>
           <div className="w-56 h-56 bg-gray-200 border-4 border-black shadow-[4px_4px_0px_#000] flex flex-col items-center justify-center text-gray-500 font-bold rounded-lg">
@@ -45,7 +58,7 @@ export default function App() {
         </section>
 
         <section className="mb-6 flex flex-col items-center">
-          <h2 className="inline-block text-2xl md:text-3xl font-black mb-6 px-2 shadow-[inset_0_-12px_0_#ffe600] md:shadow-[inset_0_-16px_0_#ffe600] tracking-wide">
+          <h2 className="inline-block text-lg sm:text-2xl md:text-3xl font-black mb-6 px-2 shadow-[inset_0_-10px_0_#ffe600] md:shadow-[inset_0_-16px_0_#ffe600] tracking-tight sm:tracking-wide whitespace-nowrap">
             ③ID検索の場合
           </h2>
           <input 
